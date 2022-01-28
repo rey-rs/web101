@@ -76,7 +76,7 @@
 				<form id="deleteForm" name="deleteForm">
 				<div class="mb-3">
 					<label for="id_delete" class="form-label"># to Delete (whole row will be deleted)</label>
-					<input type="number" class="form-control" id="id_delete">
+					<input required type="number" class="form-control" id="id_delete">
 				</div>
 				<button id="deleteID" type="submit" class="btn btn-danger">Delete</button>
 				</form>
@@ -92,19 +92,19 @@
 				<form id="updateForm" name="updateForm">
 					<div class="mb-3">
 						<label for="id_update" class="form-label">Choose a # to update</label>
-						<input type="number" class="form-control" id="id_update">
+						<input required type="number" class="form-control" id="id_update">
 					</div>
 					<div class="mb-3">
 						<label for="id#_update" class="form-label">Update ID Number</label>
-						<input pattern="\d{3}-\d{5}" maxlength="9" minlength="9" type="text" class="form-control" id="id#_update">
+						<input pattern="\d{3}-\d{5}" maxlength="9" minlength="9" required type="text" class="form-control" id="id#_update">
 					</div>
 					<div class="mb-3">
 						<label for="first_update" class="form-label">Update First Name</label>
-						<input type="text" class="form-control" id="first_update">
+						<input required type="text" class="form-control" id="first_update">
 					</div>
 					<div class="mb-3">
 						<label for="last_update" class="form-label">Update Last Name</label>
-						<input type="text" class="form-control" id="last_update">
+						<input required type="text" class="form-control" id="last_update">
 					</div>
 					<div class="mb-3">
 						<label for="gender_update" class="form-label">Update Gender</label>
@@ -115,15 +115,15 @@
 					</div>
 					<div class="mb-3">
 						<label for="bday_update" class="form-label">Update Birthday</label>
-						<input type="date" class="form-control" id="bday_update">
+						<input required type="date" class="form-control" id="bday_update">
 					</div>
 					<div class="mb-3">
 						<label for="prog_update" class="form-label">Update Program</label>
-						<input type="text" class="form-control" id="prog_update">
+						<input required type="text" class="form-control" id="prog_update">
 					</div>
 					<div class="mb-3">
 						<label for="year_update" class="form-label">Update Year Level</label>
-						<input max="5" min="1" type="number" class="form-control" id="year_update">
+						<input required max="5" min="1" type="number" class="form-control" id="year_update">
 					</div>
 					<button id ="updateID" class="btn btn-warning" type="submit">Update</button>
 				</form>
